@@ -18,9 +18,9 @@ export function DateRangeSelect() {
       }}
       renderInput={(startProps, endProps) => (
         <div className='DateRangeSelect'>
-          <TextField {...startProps} />
+          <TextField {...startProps} data-cy='startDateInput'/>
           <Box sx={{ mx: 2 }}> to </Box>
-          <TextField {...endProps} />
+          <TextField {...endProps} data-cy='endDateInput' />
         </div>
       )}
     />
